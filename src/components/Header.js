@@ -1,7 +1,9 @@
 import React from "react"
 import logo from "../images/logo.svg"
 import avatar from "../images/image-avatar.png"
-import cart from "../images/icon-cart.svg"
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faCartShopping} from "@fortawesome/free-solid-svg-icons";
+
 
 function Header(){
     return(
@@ -18,8 +20,8 @@ function Header(){
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                 <ul className="account">
-                    <li><a href="#!"><img src={cart} alt="cart"/></a></li>
-                    <li><a href="#!"><img src={avatar} alt="avatar"/></a></li>
+                    <li className="cart"><a href="#!"><FontAwesomeIcon icon={faCartShopping} fade /></a></li>
+                    <li className="avatar"><a href="#!"><img src={avatar} alt="avatar"/></a></li>
                 </ul>
             </nav>
 
