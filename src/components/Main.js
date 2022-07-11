@@ -20,16 +20,18 @@ function Main(){
             </div>
             <div className="product-info">
                 <div className="info">
-                    <h3>Sneaker Company</h3>
-                    <h1>Fall Limited Edition Sneakers</h1>
+                    <div className="info-header">
+                        <h4>Sneaker Company</h4>
+                        <h1>Fall Limited Edition Sneakers</h1>
+                    </div>
                     <p>
                         These low-profile sneakers are your perfect casual wear companion. Featuring a 
                         durable rubber outer sole, they'll withstand everything the weather can offer.
                     </p>
                 </div>
                 <div className="cart-pricing">
-                    <h2>$125.00 <span>50%</span><br/><span>$250.00</span></h2>
-                    <div>
+                    <h3>$125.00 <span className="discount">50%</span><br/><span className="original-price">$250.00</span></h3>
+                    <div className="add-to-cart">
                         <h4><span><FontAwesomeIcon icon={faMinus}/></span> 0 <span><FontAwesomeIcon icon={faPlus}/></span></h4>
                         <button><FontAwesomeIcon icon={faCartArrowDown}/> Add to Cart</button>
                     </div>

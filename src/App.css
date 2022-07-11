@@ -150,11 +150,89 @@ main{
   .product-info{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 50%;
+    gap: 2rem;
   }
     .info{
-
+      display: flex;
+      flex-direction: column;
+      max-width: 80%;
+      gap: 2rem;
     }
+      .info-header{
+        max-width: 70%;
+      }
+        .info-header h4{
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          color: hsl(26, 100%, 55%);
+        }
+        .info-header h1{
+          color: hsl(220, 13%, 13%);
+        }
+      .info p{
+        color: hsl(219, 9%, 45%);
+        max-width: 90%;
+      }
     .cart-pricing{
-
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
     }
+      .cart-pricing h3{
+        color: hsl(220, 13%, 13%);
+      }
+        .discount{
+          color: hsl(26, 100%, 55%);
+          background-color: hsl(25, 100%, 94%);
+          font-size: small;
+          padding: 5px;
+          border-radius: 5px;
+          margin: 1rem;
+        }
+        .original-price{
+          color: hsl(220, 14%, 75%);
+          font-size: small;
+        }
+    .add-to-cart{
+      display: flex;
+      gap: 3rem;
+    }
+      .add-to-cart h4{
+        display: flex;
+        gap: 1rem;
+        color: hsl(220, 13%, 13%);
+        background-color:hsl(223, 64%, 98%);
+        padding: 10px 15px;
+        border-radius: 10px;
+        transition: all 200ms linear;
+      }
+        .add-to-cart h4:hover{
+          background-color: hsl(220, 14%, 75%);
+        }
+        .add-to-cart h4 span{
+          cursor: pointer;
+          color: hsl(26, 100%, 55%);
+          transition: all 200ms linear;
+        }
+          .add-to-cart h4 span:hover{
+            color: hsl(26, 92%, 64%);
+          }
+      .add-to-cart button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        width: 40%;
+        border: none;
+        border-radius: 10px;
+        background-color: hsl(26, 100%, 55%);
+        color: white;
+        font-weight: 700;
+        cursor: pointer;
+        transition: all 200ms linear;
+      }
+        .add-to-cart button:hover{
+          background-color: hsl(26, 92%, 64%);
+        }
